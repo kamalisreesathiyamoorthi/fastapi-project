@@ -41,6 +41,7 @@ A backend clone of a social media application built using **FastAPI** and modern
 ### 1.Clone the repository:
 ```bash
 git clone https://github.com/kamalisreesathiyamoorthi/fastapi-project
+cd FASTAPI
 ```
 
 ### 2.Create a virtual environment:
