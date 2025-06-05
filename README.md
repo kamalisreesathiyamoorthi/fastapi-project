@@ -21,7 +21,7 @@ A backend clone of a social media application built using **FastAPI** and modern
 
 | Layer         | Technologies Used              |
 |---------------|--------------------------------|
-| **Backend**    | FastAPI, Python 3.11, Uvicorn  |
+| **Backend**    | FastAPI, Python 3.113.13.1, Uvicorn  |
 | **API Testing**| Postman                        |
 | **Database**   | PostgreSQL                     |
 | **ORM**        | SQLAlchemy                     |
@@ -38,30 +38,25 @@ A backend clone of a social media application built using **FastAPI** and modern
 
 ## ⚙️ How to Run Locally
 
+### 1.Clone the repository:
 ```bash
-#!/bin/bash
+git clone https://github.com/kamalisreesathiyamoorthi/fastapi-project
+```
 
-echo "🚀 Cloning repository and moving into it..."
-git clone https://github.com/sathiyaprabha012/social_media_app.git && cd social_media_app || { echo "Failed to clone repo"; exit 1; }
+### 2.Create a virtual environment:
+```bash
+python -m venv venv
+```
 
-echo "🛠 Creating Python virtual environment..."
-python -m venv venv || { echo "Failed to create virtual env"; exit 1; }
+### 3.Install dependencies:
+```bash
+pip install -r requirements.txt
+```
 
-echo "⚡ Activating virtual environment..."
-# Detect OS and activate accordingly
-if [[ "$OSTYPE" == "msys"* ]] || [[ "$OSTYPE" == "win32" ]]; then
-  # Windows (Git Bash or WSL)
-  source venv/Scripts/activate
-else
-  # Mac/Linux
-  source venv/bin/activate
-fi
+### 4.Configure environment variables:
 
-echo "📦 Installing dependencies..."
-pip install -r requirements.txt || { echo "Failed to install dependencies"; exit 1; }
-
-echo "✍️ Creating .env file..."
-cat > .env <<EOL
+# Create a .env file in the root directory with the following content:
+```bash
 DATABASE_HOSTNAME=localhost
 DATABASE_PORT=5432
 DATABASE_USERNAME=yourusername
@@ -70,10 +65,25 @@ DATABASE_NAME=yourdb
 SECRET_KEY=your-secret-key
 ALGORITHM=HS256
 ACCESS_TOKEN_EXPIRE_MINUTES=30
-EOL
+```
 
-echo "🛢 Running database migrations..."
-alembic upgrade head || { echo "Migration failed"; exit 1; }
-
-echo "🚀 Starting development server..."
+### 5.Run the API Server:
+```bash
 uvicorn app.main:app --reload
+```
+
+### 6.Access the API:
+- Open your browser and go to: http://localhost:8000/docs
+
+### 7.Run tests:
+```bash
+pytest -v fastapi/test
+```
+
+
+
+
+
+
+
+
