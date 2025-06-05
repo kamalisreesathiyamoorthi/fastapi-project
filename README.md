@@ -38,6 +38,7 @@ A backend clone of a social media application built using **FastAPI** and modern
 
 ## ⚙️ How to Run Locally
 
+```bash
 #!/bin/bash
 
 echo "🚀 Cloning repository and moving into it..."
@@ -76,4 +77,3 @@ alembic upgrade head || { echo "Migration failed"; exit 1; }
 
 echo "🚀 Starting development server..."
 uvicorn app.main:app --reload
-
