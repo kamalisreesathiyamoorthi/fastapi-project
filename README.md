@@ -21,7 +21,7 @@ A backend clone of a social media application built using **FastAPI** and modern
 
 | Layer         | Technologies Used              |
 |---------------|--------------------------------|
-| **Backend**    | FastAPI, Python 3.113.13.1, Uvicorn  |
+| **Backend**    | FastAPI, Python 3.13.1, Uvicorn  |
 | **API Testing**| Postman                        |
 | **Database**   | PostgreSQL                     |
 | **ORM**        | SQLAlchemy                     |
