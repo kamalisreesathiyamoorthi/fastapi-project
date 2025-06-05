@@ -77,7 +77,7 @@ uvicorn app.main:app --reload
 
 ### 7.Run tests:
 ```bash
-pytest -v fastapi/test
+pytest -v fastapi/tests
 ```
 
 
