@@ -40,7 +40,7 @@ A backend clone of a social media application built using **FastAPI** and modern
 
 ### 1.Clone the repository:
 ```bash
-git clone https://github.com/kamalisreesathiyamoorthi/fastapi-project
+git clone https://github.com/kamalisreesathiyamoorthi/fastapi_social_media.git
 cd FASTAPI
 ```
 
