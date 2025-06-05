@@ -55,7 +55,7 @@ pip install -r requirements.txt
 
 ### 4.Configure environment variables:
 
-# Create a .env file in the root directory with the following content:
+- Create a .env file in the root directory with the following content:
 ```bash
 DATABASE_HOSTNAME=localhost
 DATABASE_PORT=5432
