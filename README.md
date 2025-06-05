@@ -81,6 +81,12 @@ uvicorn app.main:app --reload
 pytest -v fastapi/tests
 ```
 
+### 8.Docker Support
+```bash
+docker-compose up --build
+```
+---
+
 
 
 
